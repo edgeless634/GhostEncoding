@@ -1,12 +1,7 @@
 import re
 
 def to_bin_str(x:int):
-    p = 128
-    ret = ""
-    while p:
-        ret += str(int(bool(x&p)))
-        p //= 2
-    return ret
+    return str(bin(x))[2:]
 
 def ori_encode(s):
     ret = ""
